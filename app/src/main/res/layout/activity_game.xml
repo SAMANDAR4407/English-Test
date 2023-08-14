@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#F3303030">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_margin="8dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textAction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Test yourself"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="56dp"
+                android:layout_height="match_parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#F5DF8500"
+        app:cardCornerRadius="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        tools:text="Which of the following words means 'the quality of being honest and having strong moral principles'?" />
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCurrentPos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:gravity="end"
+                android:textColor="@color/white"
+                tools:text="1/15" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#2E9EC5"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="8dp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:buttonTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:text="What is the difference between \affect\ and \effectere is no difference"
+                android:layout_marginStart="45dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#717171"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="8dp">
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:buttonTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:text="What is the difference between \affect\ and \effectere is no difference"
+                android:layout_marginStart="45dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#E8961F"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="8dp">
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:buttonTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:text="What is the difference between \affect\ and \effectere is no difference"
+                android:layout_marginStart="45dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#EE40B334"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="8dp">
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:buttonTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:text="What is the difference between \affect\ and \effectere is no difference"
+                android:layout_marginStart="45dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSkip"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_flat"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNext"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:background="@drawable/ic_action"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

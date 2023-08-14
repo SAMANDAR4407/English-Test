@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".ui.result.InnerResultActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_gravity="top|center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="120dp"
+        app:cardBackgroundColor="#EE202020"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/bg_stroke_inner_result1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="The Question was"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/question_in_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:text="dkjnndgdv oihergoiaergv sFIUh FSIUhoun ouhoSFN" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/bg_stroke_inner_result2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="The Correct Answer"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <View
+                    android:id="@+id/divider0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/correct_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:text="dkjnndgdv oihergoiaergv sFIUh FSIUhoun ouhoSFN" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="4.5"
+                android:background="@drawable/bg_stroke_inner_result3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="The Answer You \nOpted For"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/user_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:text="dkjnndgdv oihergoiaergv sFIUh FSIUhoun ouhoSFN" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_okay"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_stroke_btn_result"
+        android:text="Okay"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</FrameLayout>
